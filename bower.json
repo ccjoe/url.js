@@ -1,0 +1,32 @@
+{
+  "name": "url.js",
+  "main": "url.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ccjoe/url.js",
+  "description": "full url parse and set",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "url",
+    "parse",
+    "hash",
+    "search",
+    "host",
+    "hashsearch",
+    "object"
+  ],
+  "authors": [
+    "ccjoe"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

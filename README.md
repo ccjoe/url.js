@@ -126,6 +126,7 @@ describe("Cora.url 测试获取url对象", function(){
 'seturl1=1&seturl2=2'
 'seturl1:1,seturl2:2'
 ```
+
 ## Licence ##
 
 The MIT License
