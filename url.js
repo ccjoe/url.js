@@ -14,7 +14,7 @@
     }
 }(this, function () {
     var re = {
-        url: /((http|https):\/\/)?((\w+\.)+\w+)?((\/\w+)+)?\/?\??((\w+=\w+&?)+)?#?(.+)?/g,
+        url: /((http|https):\/\/)?((\w+\.)+\w+)?(:\d+)?((\/\w+)+)?\/?\??((\w+=\w+&?)+)?#?(.+)?/g,
         kv: /(\w+)=([^&#]+)/g,
         search: /([^\?]+)?\??((\w+=\w+&?)+)?/,     //[^\?]+ 除?外所有
         path: /.+((\/\w+)+)?/,
@@ -93,20 +93,19 @@
                 hashPath: {array}     Hash里数组
             };
      */
-    var getUrl = function (url, isParse) {
+    var getUrl  = function (url, isParse){
         re.url.lastIndex = 0;
         var uri = re.url.exec(url);
-        var hashfull = uri[9];
-        path = uri[5] || '';
-        search = uri[7] || '';
+        var hashfull = uri[10], path = uri[6] || '', search = uri[8] || '';
         //console.log(uri, 'uri');
         return {
             protocal: uri[2],
             domain: uri[3],
+            port: uri[5],
             path: isParse ? path.substring(1).split('/') : path,
             search: isParse ? getParams(search) : search,
             hash: hashfull,
-            hashPath: getHashPath(hashfull, isParse),
+            hashPath: getHashPath(hashfull, isParse) ,
             hashsearch: getHashSearch(hashfull, isParse)
         };
     };

@@ -1,5 +1,6 @@
 # url.js
 parse and set url by url rules,根据url规则解析或设置url各部件
+bower install url.js
 ## API ##
 在corajs项目中的测试代码的测试代码及结果：
 ## 测试代码 ##
