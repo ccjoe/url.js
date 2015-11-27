@@ -1,8 +1,8 @@
 # url.js
 parse and set url by url rules,根据url规则解析或设置url各部件
-###API
+## API ##
 在corajs项目中的测试代码的测试代码及结果：
-###测试代码
+## 测试代码 ##
 ```javascript
 describe("Cora.url 测试获取url对象", function(){
     var urlarr = ['http://www.test.com/a/b/c?test=1&kk=2#hash/p1/p2/p3?htest=1&hh=2',
@@ -126,3 +126,8 @@ describe("Cora.url 测试获取url对象", function(){
 'seturl1=1&seturl2=2'
 'seturl1:1,seturl2:2'
 ```
+## Licence ##
+
+The MIT License
+
+Copyright (c) 2015 Joe github.com@ccjoe
