@@ -2,6 +2,8 @@
 parse and set url by url rules,根据url规则解析或设置url各部件
 bower install url.js
 ## API ##
+ 参见： (http://f2ee.com/jsdoc/url/url.html)[http://f2ee.com/jsdoc/url/url.html]
+
 在corajs项目中的测试代码的测试代码及结果：
 ## 测试代码 ##
 ```javascript
